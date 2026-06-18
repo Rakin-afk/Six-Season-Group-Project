@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import ScrollToTop from './components/ScrollToTop' // 👈 ১. প্রথমে ইমপোর্ট করুন
+import ScrollToTop from './components/ScrollToTop' 
+import ScrollToTopButton from './components/ScrollToTopButton' 
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs' 
 import Contact from './pages/Contact'
@@ -32,6 +33,7 @@ function App() {
         </main>
         
         <Footer />
+        <ScrollToTopButton /> {/* স্ক্রল টু টপ বাটন সব পেজে থাকবে */}
       </div>
     </BrowserRouter>
   )
