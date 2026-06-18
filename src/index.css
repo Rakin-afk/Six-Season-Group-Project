@@ -13,6 +13,8 @@
 
   body {
     @apply m-0 min-h-svh antialiased;
+    background-color: #BEF4B8;
+    color: #06472a; /* default dark text to ensure readability on mint background */
   }
 
   #root {

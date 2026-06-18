@@ -4,19 +4,32 @@ import './App.css'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
-import About from './pages/About'
+import AboutUs from './pages/AboutUs' 
 import Contact from './pages/Contact'
+import Management from './pages/Management'
+// 🆕 শুধুমাত্র ১ম পেজটি ইমপোর্ট থাকবে
+import BoardDirectors1 from './pages/BoardDirectors1'
+import TeamLeaders from './pages/TeamLeaders'
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-svh">
+      <div className="flex flex-col min-h-screen bg-[#E7FBF3]">
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+        
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutUs />} /> 
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/management" element={<Management />} /> 
+            
+            {/* 🎯 বাটনে ক্লিক করলে এই পাথে চলে আসবে */}
+            <Route path="/board-of-directors" element={<BoardDirectors1 />} />
+            <Route path="/team-leaders" element = {<TeamLeaders />} />
+          </Routes>
+        </main>
+        
         <Footer />
       </div>
     </BrowserRouter>

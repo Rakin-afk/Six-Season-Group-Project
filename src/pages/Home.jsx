@@ -379,8 +379,7 @@ export default function Home() {
 
           {/* Main Timeline Container */}
           <div className="max-w-6xl mx-auto mt-12 bg-white/10 backdrop-blur-sm p-10 rounded-3xl border border-white/20 min-h-[500px] relative flex flex-col justify-center">
-            {/* Horizontal Connecting Line */}
-            <div className="absolute top-1/3 left-10 right-10 border-t border-white/30" />
+            {/* Remove long horizontal connector to avoid overlapping cards; use short arrows on cards instead */}
 
             {/* Timeline Cards Grid */}
             <div className="relative z-10">
@@ -388,10 +387,10 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 px-4">
                 {/* Card 1: 2014 */}
                 <div className="border border-emerald-500/40 p-4 rounded-xl bg-white/5 backdrop-blur-md">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-lg font-bold text-emerald-400">2014</span>
-                    <span className="text-xl">🚩</span>
-                  </div>
+                  <div className="flex items-center gap-2 mb-3 relative">
+                      <span className="text-lg font-bold text-emerald-400">2014</span>
+                      <span className="text-xl">🚩</span>
+                    </div>
                   <h3 className="font-bold text-sm text-emerald-400 mb-2">
                     Six Season Agro Traders
                   </h3>
@@ -402,10 +401,14 @@ export default function Home() {
 
                 {/* Card 2: 2017 */}
                 <div className="border border-emerald-500/40 p-4 rounded-xl bg-white/5 backdrop-blur-md">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-lg font-bold text-emerald-400">2017</span>
-                    <span className="text-xl">🚩</span>
-                  </div>
+                  <div className="flex items-center gap-2 mb-3 relative">
+                      <span className="text-lg font-bold text-emerald-400">2017</span>
+                      <span className="text-xl">🚩</span>
+                      {/* short arrow indicator */}
+                      <svg className="absolute -right-6 top-1/2 transform -translate-y-1/2 h-4 w-4 text-emerald-300" viewBox="0 0 24 24" fill="none" aria-hidden>
+                        <path d="M3 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
                   <h3 className="font-bold text-sm text-emerald-400 mb-2">
                     Six Season Global Business LTD
                   </h3>
@@ -419,10 +422,13 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
                 {/* Card 3: 2019 */}
                 <div className="border border-emerald-500/40 p-4 rounded-xl bg-white/5 backdrop-blur-md">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-lg font-bold text-emerald-400">2019</span>
-                    <span className="text-xl">🚩</span>
-                  </div>
+                  <div className="flex items-center gap-2 mb-3 relative">
+                      <span className="text-lg font-bold text-emerald-400">2019</span>
+                      <span className="text-xl">🚩</span>
+                      <svg className="absolute -right-6 top-1/2 transform -translate-y-1/2 h-4 w-4 text-emerald-300" viewBox="0 0 24 24" fill="none" aria-hidden>
+                        <path d="M3 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
                   <h3 className="font-bold text-sm text-emerald-400 mb-2">
                     Six Season Global Ventures
                   </h3>
@@ -433,10 +439,13 @@ export default function Home() {
 
                 {/* Card 4: 2020 */}
                 <div className="border border-emerald-500/40 p-4 rounded-xl bg-white/5 backdrop-blur-md">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-lg font-bold text-emerald-400">2020</span>
-                    <span className="text-xl">🚩</span>
-                  </div>
+                  <div className="flex items-center gap-2 mb-3 relative">
+                      <span className="text-lg font-bold text-emerald-400">2020</span>
+                      <span className="text-xl">🚩</span>
+                      <svg className="absolute -right-6 top-1/2 transform -translate-y-1/2 h-4 w-4 text-emerald-300" viewBox="0 0 24 24" fill="none" aria-hidden>
+                        <path d="M3 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
                   <h3 className="font-bold text-sm text-emerald-400 mb-2">
                     Six Season Enterprises
                   </h3>
@@ -447,10 +456,13 @@ export default function Home() {
 
                 {/* Card 5: 2023 */}
                 <div className="border border-emerald-500/40 p-4 rounded-xl bg-white/5 backdrop-blur-md">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span className="text-lg font-bold text-emerald-400">2023</span>
-                    <span className="text-xl">🚩</span>
-                  </div>
+                  <div className="flex items-center gap-2 mb-3 relative">
+                      <span className="text-lg font-bold text-emerald-400">2023</span>
+                      <span className="text-xl">🚩</span>
+                      <svg className="absolute -right-6 top-1/2 transform -translate-y-1/2 h-4 w-4 text-emerald-300" viewBox="0 0 24 24" fill="none" aria-hidden>
+                        <path d="M3 12h14M13 6l6 6-6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                      </svg>
+                    </div>
                   <h3 className="font-bold text-sm text-emerald-400 mb-2">
                     Six Season Global Collective
                   </h3>
