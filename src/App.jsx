@@ -13,7 +13,8 @@ import TeamLeaders from './pages/TeamLeaders'
 
 function App() {
   return (
-    <BrowserRouter>
+    // 🎯 নিচে basename যুক্ত করা হয়েছে যাতে GitHub Pages-এ ব্ল্যাঙ্ক স্ক্রিন না আসে
+    <BrowserRouter basename="/Six-Season-Group-Project">
       <div className="flex flex-col min-h-screen bg-[#E7FBF3]">
         <Navbar />
         
@@ -26,7 +27,7 @@ function App() {
             
             {/* 🎯 বাটনে ক্লিক করলে এই পাথে চলে আসবে */}
             <Route path="/board-of-directors" element={<BoardDirectors1 />} />
-            <Route path="/team-leaders" element = {<TeamLeaders />} />
+            <Route path="/team-leaders" element={<TeamLeaders />} />
           </Routes>
         </main>
         
