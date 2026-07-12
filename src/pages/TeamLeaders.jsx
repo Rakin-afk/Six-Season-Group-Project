@@ -14,22 +14,19 @@ const TeamLeaders = () => {
             Our Team Leaders
           </h1>
           
-          {/* টাইটেলের নিচের চিকন ডিভাইডার লাইন */}
+         
           <div className="w-full h-[1px] bg-white/20 mx-auto mt-6 mb-8"></div>
           
-          {/* সাবটাইটেল বা ডেসক্রিপশন টেক্সট */}
           <p className="text-sm md:text-base text-white/80 leading-relaxed font-light">
             Meet the driving force behind our operations. Our team leaders combine expertise, 
             passion, and strategic execution to deliver excellence across every department.
           </p>
         </div>
 
-        {/* =========================================================================
-            TEAM LEADERS GRID SECTION (3 Columns Layout)
-           ========================================================================= */}
+        
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-12 max-w-6xl mx-auto">
           
-          {/* LEADER CARD 1 (NIAZ MORSHED) */}
+          
           <div className="flex flex-col items-center text-center group">
             <div className="w-full aspect-[4/5] max-w-[320px] bg-white/15 backdrop-blur-md rounded-[40px] border border-white/30 overflow-hidden shadow-2xl transition-all duration-300 group-hover:border-emerald-400 group-hover:scale-[1.02] flex items-center justify-center relative">
               <div className="text-white/40 text-sm font-medium tracking-wider">Image Holder (4:5)</div>
@@ -48,7 +45,7 @@ const TeamLeaders = () => {
             </div>
           </div>
 
-          {/* LEADER CARD 2 (MAISHA JAMAN MRIDULA) */}
+          
           <div className="flex flex-col items-center text-center group">
             <div className="w-full aspect-[4/5] max-w-[320px] bg-white/15 backdrop-blur-md rounded-[40px] border border-white/30 overflow-hidden shadow-2xl transition-all duration-300 group-hover:border-emerald-400 group-hover:scale-[1.02] flex items-center justify-center relative">
               <div className="text-white/40 text-sm font-medium tracking-wider">Image Holder (4:5)</div>

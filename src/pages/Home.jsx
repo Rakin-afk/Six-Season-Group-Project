@@ -66,25 +66,33 @@ export default function Home() {
     <main className="bg-[#BEF4B8]">
       <section className="w-full max-w-7xl mx-auto pt-44 px-6 py-12 sm:px-8 sm:py-16">
         <div className="grid min-h-[calc(100vh-11rem)] items-center grid-cols-1 gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16">
-          {/* Left side: image placeholders */}
-          <div className="space-y-4">
-            <div className="grid grid-cols-3 gap-4">
-              <div className="overflow-hidden rounded-[28px] border border-white/70 bg-white/80 shadow-[0_24px_70px_-34px_rgba(16,128,53,0.35)]">
+          {/* Left side: image placeholders (গ্যাপ বাড়িয়ে gap-8 এবং প্যাডিং p-2 দেওয়া হয়েছে যেন ওভারল্যাপ না হয়) */}
+          <div className="space-y-6 md:space-y-8 p-2">
+            <div className="grid grid-cols-3 gap-6 md:gap-8">
+              {/* ১ম বক্স: স্ট্যান্ডার্ড ফ্লোটিং */}
+              <div className="animate-[bounce_3s_infinite] overflow-hidden rounded-[28px] border border-white/70 bg-white/80 shadow-[0_24px_70px_-34px_rgba(16,128,53,0.35)]">
                 <div className="aspect-[4/3] bg-slate-100" aria-label="Hero image placeholder 1" role="img" />
               </div>
-              <div className="overflow-hidden rounded-[28px] border border-white/70 bg-white/80 shadow-[0_24px_70px_-34px_rgba(16,128,53,0.35)]">
+              
+              {/* ২য় বক্স: একটু জলদি ফ্লোট করবে এবং ওপরে-নিচে মুভমেন্ট কম হবে */}
+              <div className="animate-[bounce_2s_infinite] overflow-hidden rounded-[28px] border border-white/70 bg-white/80 shadow-[0_24px_70px_-34px_rgba(16,128,53,0.35)]">
                 <div className="aspect-[4/3] bg-slate-100" aria-label="Hero image placeholder 2" role="img" />
               </div>
-              <div className="overflow-hidden rounded-[28px] border border-white/70 bg-white/80 shadow-[0_24px_70px_-34px_rgba(16,128,53,0.35)]">
+              
+              {/* ৩য় বক্স: একটু ধীরে এবং অল্টারনেট রিদমে ফ্লোট করবে */}
+              <div className="animate-[bounce_4s_infinite] overflow-hidden rounded-[28px] border border-white/70 bg-white/80 shadow-[0_24px_70px_-34px_rgba(16,128,53,0.35)]">
                 <div className="aspect-[4/3] bg-slate-100" aria-label="Hero image placeholder 3" role="img" />
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-4">
-              <div className="overflow-hidden rounded-[36px] border border-white/70 bg-white/80 shadow-[0_26px_90px_-34px_rgba(16,128,53,0.35)]">
+            <div className="grid grid-cols-2 gap-6 md:gap-8">
+              {/* ৪র্থ বক্স */}
+              <div className="animate-[bounce_3.5s_infinite] overflow-hidden rounded-[36px] border border-white/70 bg-white/80 shadow-[0_26px_90px_-34px_rgba(16,128,53,0.35)]">
                 <div className="aspect-[5/4] bg-slate-100" aria-label="Hero image placeholder 4" role="img" />
               </div>
-              <div className="overflow-hidden rounded-[36px] border border-white/70 bg-white/80 shadow-[0_26px_90px_-34px_rgba(16,128,53,0.35)]">
+              
+              {/* ৫মা বক্স */}
+              <div className="animate-[bounce_2.5s_infinite] overflow-hidden rounded-[36px] border border-white/70 bg-white/80 shadow-[0_26px_90px_-34px_rgba(16,128,53,0.35)]">
                 <div className="aspect-[5/4] bg-slate-100" aria-label="Hero image placeholder 5" role="img" />
               </div>
             </div>
@@ -92,7 +100,7 @@ export default function Home() {
 
           {/* Right side: textual content */}
           <div className="flex flex-col justify-start">
-            <span className="mb-6 inline-flex rounded-full bg-white/50 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-[#108035]">
+            <span className="mb-6 inline-flex self-start rounded-full bg-white/50 px-5 py-2 text-xs font-semibold uppercase tracking-[0.35em] text-[#108035]">
               EST. 2014 - GLOBAL OPERATIONS
             </span>
 
@@ -104,7 +112,8 @@ export default function Home() {
             </p>
 
             <div className="mb-8 flex flex-wrap gap-4">
-              <button className="rounded-full bg-[#108035] px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              {/* Explore Our Companies Button (মাউস রাখলে ব্যাকগ্রাউন্ড কালো এবং টেক্সট ডিপ গ্রিন হবে) */}
+              <button className="rounded-full bg-[#108035] px-8 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-black hover:text-[#108035] hover:scale-105 hover:shadow-lg">
                 Explore Our Companies
               </button>
               <button className="rounded-full border-2 border-[#108035] px-8 py-3.5 text-sm font-semibold text-[#108035] transition-all duration-300 hover:bg-[#108035]/10">
@@ -115,7 +124,7 @@ export default function Home() {
             <div className="flex flex-wrap items-center gap-6">
               <div className="grid w-full grid-cols-2 gap-4 sm:grid-cols-4">
                 {HERO_STATS.map((stat) => (
-                  <div key={stat.label} className="rounded-[24px] bg-white px-4 py-5 text-center shadow-[0_18px_48px_-28px_rgba(15,120,48,0.28)]">
+                  <div key={stat.label} className="rounded-[24px] bg-emerald-50 px-4 py-5 text-center shadow-[0_18px_48px_-28px_rgba(15,120,48,0.28)]">
                     <p className="text-2xl font-bold text-[#108035]">{stat.value}</p>
                     <p className="mt-1 text-xs font-semibold uppercase tracking-[0.18em] text-slate-600">
                       {stat.label}
@@ -1058,83 +1067,7 @@ export default function Home() {
   </div>
 </section>
 
-<footer className="w-full bg-[#012406] pt-16 pb-8 text-white">
-  <div className="w-full max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12">
-    <div>
-      <h3 className="text-2xl md:text-3xl font-bold text-white">Six Season Group</h3>
-      <p className="text-sm text-white/70 mt-6 leading-relaxed max-w-sm">
-        Creating exceptional garments with attention to detail and sustainable practices since 2014. Our commitment to quality defines every piece we produce.
-      </p>
-      <div className="mt-8 space-y-4 text-sm">
-        <div className="flex items-start gap-3 text-white/80">
-          <span className="mt-1">📞</span>
-          <span>+8801958486943</span>
-        </div>
-        <div className="flex items-start gap-3 text-white/80">
-          <span className="mt-1">✉️</span>
-          <span>info@sixseasongroup.com</span>
-        </div>
-        <div className="flex items-start gap-3 text-white/80 leading-relaxed">
-          <span className="mt-1">📍</span>
-          <span>House #6, Main Road, Rajbari, Kamarpara, Turaga, Dhaka – 1230, Bangladesh.</span>
-        </div>
-      </div>
-    </div>
 
-    <div>
-      <h5 className="text-lg font-semibold text-white tracking-wide border-b border-white/20 pb-2 mb-4 max-w-[100px]">
-        Popular Pages
-      </h5>
-      <div className="space-y-3 text-sm text-white/70">
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Career</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">About Us</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Management</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Contact Us</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Privacy Policy</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Terms of Service</a>
-      </div>
-    </div>
-
-    <div>
-      <h5 className="text-lg font-semibold text-white tracking-wide border-b border-white/20 pb-2 mb-4 max-w-[120px]">
-        Sister Concern
-      </h5>
-      <div className="space-y-3 text-sm text-white/70">
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Six Season Agro Traders</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Six Season Global Business LTD</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Six Season USA LLC</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Marss Outwear Creation</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Delivery 24</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">AMRISS</a>
-      </div>
-    </div>
-
-    <div>
-      <h5 className="text-lg font-semibold text-white tracking-wide border-b border-white/20 pb-2 mb-4 max-w-[80px]">
-        More Info
-      </h5>
-      <div className="space-y-3 text-sm text-white/70">
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">FAQs</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Contact Us</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Terms & Conditions</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Privacy Policy</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Patient Portal</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Billing Support</a>
-      </div>
-    </div>
-  </div>
-
-  <div className="w-full border-t border-white/10 mt-16 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 px-6 sm:px-8">
-    <p className="text-sm text-white/60">© 2026 Six Season Group. All rights reserved.</p>
-    <div className="flex items-center gap-6 text-white/70 text-lg">
-      <a href="#" className="hover:text-white transition-colors cursor-pointer">🔵</a>
-      <a href="#" className="hover:text-white transition-colors cursor-pointer">🐦</a>
-      <a href="#" className="hover:text-white transition-colors cursor-pointer">🔗</a>
-      <a href="#" className="hover:text-white transition-colors cursor-pointer">📸</a>
-      <a href="#" className="hover:text-white transition-colors cursor-pointer">▶️</a>
-    </div>
-  </div>
-</footer>
 
     </main>
   )

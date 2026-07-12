@@ -833,10 +833,10 @@ excellence
   
   {/* Section Header */}
   <div className="text-center mb-10 md:mb-14">
-    <h2 className="text-3xl md:text-5xl font-semibold text-white tracking-wide mb-4">
+    <h2 className="text-3xl md:text-5xl font-semibold text-black tracking-wide mb-4">
       Leadership Team
     </h2>
-    <p className="text-sm sm:text-base md:text-lg text-white/80 font-normal max-w-3xl mx-auto leading-relaxed">
+    <p className="text-sm sm:text-base md:text-lg text-black/80 font-normal max-w-3xl mx-auto leading-relaxed">
       Experienced professionals guiding Six Season Group with vision, expertise and strategic direction
     </p>
   </div>
@@ -1109,7 +1109,7 @@ Standards
     {/* Inner Layout Wrapper */}
     <div className="flex flex-col gap-8 md:gap-10">
       
-      {/* ─── ROW 1: 2 Top Cards (Equal Height & Width) ─── */}
+      {/* ROW 1: 2 Top Cards (Equal Height & Width) */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 w-full">
         
         {/* Top Left Card */}
@@ -1128,101 +1128,18 @@ Standards
 
       </div>
 
-      {/* ─── ROW 2: Bottom Full-Width Horizontal Card ─── */}
+      {/* ROW 2: Bottom Full-Width Horizontal Card */}
       <div className="w-full bg-[#052211] rounded-full p-4 sm:p-5 md:py-6 md:px-10 shadow-md flex items-center justify-center">
-  <p className="text-sm sm:text-base md:text-lg text-white font-normal leading-relaxed text-center max-w-4xl">
-    <span className="font-bold text-emerald-400">Technological Innovation:</span> Investing in Industry 4.0 technologies, automation, and digital transformation to enhance efficiency, precision, and customization capabilities across our production processes. 
-  </p>
-</div>
+        <p className="text-sm sm:text-base md:text-lg text-white font-normal leading-relaxed text-center max-w-4xl">
+          <span className="font-bold text-emerald-400">Technological Innovation:</span> Investing in Industry 4.0 technologies, automation, and digital transformation to enhance efficiency, precision, and customization capabilities across our production processes. 
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
+   
 
-<footer className="w-full bg-[#012406] pt-16 pb-8 text-white relative z-50 block clear-both">
-  <div className="w-full max-w-7xl mx-auto px-6 sm:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 text-left">
-    
-    {/* Column 1: Brand & Contact */}
-    <div className="w-full">
-      <h3 className="text-2xl md:text-3xl font-bold text-white">Six Season Group</h3>
-      <p className="text-sm text-white/70 mt-6 leading-relaxed max-w-sm">
-        Creating exceptional garments with attention to detail and sustainable practices since 2014. Our commitment to quality defines every piece we produce.
-      </p>
-      <div className="mt-8 space-y-4 text-sm">
-        <div className="flex items-start gap-3 text-white/80">
-          <span className="mt-1 flex-shrink-0">📞</span>
-          <span>+8801958486943</span>
-        </div>
-        <div className="flex items-start gap-3 text-white/80">
-          <span className="mt-1 flex-shrink-0">✉️</span>
-          <span className="break-all">info@sixseasongroup.com</span>
-        </div>
-        <div className="flex items-start gap-3 text-white/80 leading-relaxed">
-          <span className="mt-1 flex-shrink-0">📍</span>
-          <span>House #6, Main Road, Rajbari, Kamarpara, Turaga, Dhaka – 1230, Bangladesh.</span>
-        </div>
-      </div>
-    </div>
-
-    {/* Column 2: Popular Pages */}
-    <div className="w-full">
-      <h5 className="text-lg font-semibold text-white tracking-wide border-b border-white/20 pb-2 mb-4 max-w-[140px]">
-        Popular Pages
-      </h5>
-      <div className="space-y-3 text-sm text-white/70">
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Career</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">About Us</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Management</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Contact Us</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Privacy Policy</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Terms of Service</a>
-      </div>
-    </div>
-
-    {/* Column 3: Sister Concern */}
-    <div className="w-full">
-      <h5 className="text-lg font-semibold text-white tracking-wide border-b border-white/20 pb-2 mb-4 max-w-[140px]">
-        Sister Concern
-      </h5>
-      <div className="space-y-3 text-sm text-white/70">
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Six Season Agro Traders</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Six Season Global Business LTD</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Six Season USA LLC</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Marss Outwear Creation</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Delivery 24</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">AMRISS</a>
-      </div>
-    </div>
-
-    {/* Column 4: More Info */}
-    <div className="w-full">
-      <h5 className="text-lg font-semibold text-white tracking-wide border-b border-white/20 pb-2 mb-4 max-w-[100px]">
-        More Info
-      </h5>
-      <div className="space-y-3 text-sm text-white/70">
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">FAQs</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Contact Us</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Terms & Conditions</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Privacy Policy</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Patient Portal</a>
-        <a href="#" className="block hover:text-emerald-400 transition-colors duration-200">Billing Support</a>
-      </div>
-    </div>
-
-  </div>
-
-  {/* Bottom Bar */}
-  <div className="w-full border-t border-white/10 mt-16 pt-8 max-w-7xl mx-auto px-6 sm:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-    
-    <div className="flex items-center gap-6 text-white/70 text-lg">
-      <a href="#" className="hover:text-white transition-colors cursor-pointer">🔵</a>
-      <a href="#" className="hover:text-white transition-colors cursor-pointer">🐦</a>
-      <a href="#" className="hover:text-white transition-colors cursor-pointer">🔗</a>
-      <a href="#" className="hover:text-white transition-colors cursor-pointer">📸</a>
-      <a href="#" className="hover:text-white transition-colors cursor-pointer">▶️</a>
-    </div>
-  </div>
-</footer>  
     </div>
   );
 };

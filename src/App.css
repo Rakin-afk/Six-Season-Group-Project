@@ -232,3 +232,21 @@
     border-right-color: var(--border);
   }
 }
+
+/* শুরুতে প্রথম সেকশনের পরের সব কনটেন্ট একটু নিচে থাকবে এবং অদৃশ্য থাকবে */
+.auto-scroll-reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.21, 1.02, 0.43, 1.01), 
+              transform 0.8s cubic-bezier(0.21, 1.02, 0.43, 1.01);
+  will-change: opacity, transform;
+}
+
+/* স্ক্রোলে আসার পর ক্লাসটি যুক্ত হয়ে ভেসে উঠবে */
+.auto-scroll-reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
